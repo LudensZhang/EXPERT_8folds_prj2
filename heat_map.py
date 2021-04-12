@@ -16,15 +16,15 @@ for i in df.index:
 df.insert(0, 'Env', map)
 
 print('sorting')
-df_plot = pd.DataFrame([['root:0-2month','root:0-2month'],
-                        ['root:0-2month','root:2-6month'],
-                        ['root:0-2month','root:6-12month'],
-                        ['root:2-6month','root:0-2month'],
-                        ['root:2-6month','root:2-6month'],
-                        ['root:2-6month','root:6-12month'],
-                        ['root:6-12month','root:0-2month'],
-                        ['root:6-12month','root:2-6month'],
-                        ['root:6-12month','root:6-12month']],
+df_plot = pd.DataFrame([['root:0-2month', 'root:0-2month'],
+                        ['root:0-2month', 'root:2-6month'],
+                        ['root:0-2month', 'root:6-12month'],
+                        ['root:2-6month', 'root:0-2month'],
+                        ['root:2-6month', 'root:2-6month'],
+                        ['root:2-6month', 'root:6-12month'],
+                        ['root:6-12month', 'root:0-2month'],
+                        ['root:6-12month', 'root:2-6month'],
+                        ['root:6-12month', 'root:6-12month']],
                        columns=['x', 'y']
                        )
 
@@ -79,7 +79,3 @@ fig = (ggplot(df_plot, aes(x = 'x', y = 'y', fill = 'value',))
        +theme(figure_size=(10,8))
        )
 print(fig)
-
-
-
-

@@ -27,11 +27,9 @@ fig = (ggplot(bc_pc,aes(x = 'PC1', y = 'PC2',color ='Env'))
        + theme(panel_grid_major = element_blank(), panel_grid_minor = element_blank(), panel_background = element_blank())
        + theme(axis_line = element_line(color="gray", size = 5))
        + theme(legend_key_size = 5)
-       + theme(legend_position = (0.9,0.9d))
+       + theme(legend_position = (0.9,0.9))
        + stat_ellipse()
        + xlab('PC1')
        + ylab('PC2')
        )
 print(fig)
-
-
